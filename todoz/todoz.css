@@ -1,0 +1,82 @@
+body {
+  padding: 0 2rem;
+  margin: 2rem;
+}
+
+body:not(.loaded) .is-loaded {
+  display: none;
+}
+body.loaded .is-loading {
+  display: none;
+}
+
+.container {
+  margin: 2rem 0;
+}
+
+.stats {
+  display: flex;
+}
+.stats .stat-item {
+  flex: 1;
+}
+.stats .stat-item {
+  text-align: center;
+}
+.stats .stat-item:first-child {
+  text-align: left;
+}
+.stats .stat-item:last-child {
+  text-align: right;
+}
+
+form.new-task {
+  display: flex;
+}
+form.new-task input {
+  flex: 1;
+}
+form.new-task button {
+  flex: 0;
+  min-width: 12em;
+}
+
+.container.is-dark {
+  color: #fff;
+}
+
+.container.is-loading {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.todo-item {
+  padding-bottom: 1rem;
+  border-bottom: 4px solid #eee;
+  margin-bottom: 1rem;
+}
+.todo-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.todo-item {
+  display: flex;
+}
+.todo-item .toggle-todo-item,
+.todo-item .remove-todo-item {
+  flex: 1;
+  width: 80px;
+  cursor: pointer;
+}
+.todo-item p {
+  flex: 10;
+  text-align: left;
+}
+.todo-item .remove-todo-item:before {
+  opacity: 0.5;
+}
+.todo-item .remove-todo-item:hover:before {
+  opacity: 1;
+  color: red;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>TodoZ</title>
+    <link rel="stylesheet" href="nes-0.0.2.css" />
+    <link rel="stylesheet" href="todoz.css" />
+  </head>
+  <body>
+    <header>
+      <h1><i class="icon trophy is-large"></i> TodoZ</h1>
+      <p>Handle your tasks with style <i class="snes-jp-logo"></i></p>
+    </header>
+    <section class="container is-dark is-loading">Loading…</section>
+    <section class="container with-title is-loaded">
+      <h2 class="title">Stats</h2>
+      <div class="stats">
+        <div class="stat-item">
+          <i class="icon like is-empty"></i>
+          <span class="counter pending">3</span> pending
+        </div>
+        <div class="stat-item">
+          <i class="icon like"></i> <span class="counter done">3</span> done
+        </div>
+        <div class="stat-item">
+          <i class="icon trophy"></i> <span class="counter total">6</span> total
+        </div>
+      </div>
+    </section>
+    <section class="container with-title is-loaded todo-items"></section>
+    <section class="container with-title is-loaded">
+      <h2 class="title">Add a new task</h2>
+      <form method="post" action="/todos/add" class="new-item">
+        <input type="text" placeholder="What?" class="input" name="text" />
+        <button type="submit" class="btn is-primary">Add this task</button>
+      </form>
+    </section>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="todoz.js"></script>
+  </body>
+</html>

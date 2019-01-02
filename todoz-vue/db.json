@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "done": true,
+      "text": "List important parts of ES6"
+    },
+    {
+      "id": 2,
+      "done": true,
+      "text": "Prepare a plan for days 1 and 2"
+    },
+    {
+      "id": 3,
+      "done": true,
+      "text": "Find a nice way to explore those features, like an application coded in old-school JS and we’ll refactor it to use modern ways"
+    },
+    {
+      "id": 4,
+      "done": true,
+      "text": "Create the app"
+    },
+    {
+      "id": 5,
+      "done": false,
+      "text": "Inject some bugs in app, which would not happen with modern JS"
+    },
+    {
+      "id": 6,
+      "done": false,
+      "text": "Create git history of refactoring?"
+    }
+  ]
+}
